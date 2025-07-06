@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Anchal</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Anchal</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Anchal profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Anchal</h1>
+        <p class="section__text__p2"><span id="typing-text"></span><span class="cursor-blink">|</span></p>
+        <div class="btn-container">
+          <a href="./assets/resume-example.pdf" class="btn btn-color-2" download>
+            Download CV
+          </a>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/anchal-kumar-verma-999858250/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="GitHub profile"
+            class="icon"
+            onclick="location.href='https://github.com/AnchalSR'"
+          />
+          <img
+            src="https://img.icons8.com/?size=48&id=9L16NypUzu38&format=png"
+            alt="LeetCode profile"
+            class="icon"
+            onclick="location.href='https://leetcode.com/u/AnchalVe130/'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend and ML</p>
+             
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech<br />CSE(AIML)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm Anchal, a Computer Science student at VIT Bhopal with a keen interest in solving real-world problems through technology. My foundation lies in Machine Learning, with hands-on experience in Python, Pandas, NumPy, Scikit-learn, and TensorFlow. I also build responsive web applications using HTML, CSS, JavaScript, React.js, and Tailwind CSS. I actively work on improving my problem-solving skills through DSA, and I'm familiar with tools like Git, Jupyter Notebook, and VS Code. I love turning ideas into smart, efficient, and user-friendly tech solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Structure of web pages</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Styling and responsive design</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Dynamic client-side logic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React.js</h3>
+                  <p>Component-based UI development</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>UI / UX</h3>
+                  <p>Basic design principles and wireframes</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Machine Learning</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NumPy </h3>
+                  <p> Numerical computations</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pandas</h3>
+                  <p> Data manipulation & analysis</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Scikit-learn</h3>
+                  <p> ML models & preprocessing</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Matplotlib, Seaborn </h3>
+                  <p>Data visualization</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TensorFlow</h3>
+                  <p>Deep learning</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Keras</h3>
+                  <p>Neural networks</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tools & Technologies</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                <div>
+                  <h3>VS Code</h3>
+                  <p>Code editor</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                <div>
+                  <h3>Jupyter notebook</h3>
+                  <p>ML notebooks</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                <div>
+                  <h3>Git & GitHub</h3>
+                  <p>Version control</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                <div>
+                  <h3>Google Colab</h3>
+                  <p>Cloud ML</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                <div>
+                  <h3>OpenCV</h3>
+                  <p>Image processing & computer vision</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                <div>
+                  <h3>Vercel</h3>
+                  <p>Frontend web hosting</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                <div>
+                  <h3>Figma</h3>
+                  <p>UI/UX design prototypes</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                <div>
+                  <h3>Chrome DevTools</h3>
+                  <p>Debugging & testing</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Certificates & Achievements</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                <div>
+                  <h3>Python Programming</h3>
+                  <p>HackerRank Certification</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                <div>
+                  <h3>Machine Learning</h3>
+                  <p>Coursera Specialization</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                <div>
+                  <h3>Web Development</h3>
+                  <p>Udemy Course Completion</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                <div>
+                  <h3>Data Science</h3>
+                  <p>IBM Professional Certificate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                <div>
+                  <h3>React.js</h3>
+                  <p>Meta Frontend Development</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                <div>
+                  <h3>Problem Solving</h3>
+                  <p>LeetCode Achievement</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Internships</h2>
+            <div class="internship-container">
+              <div class="internship-item">
+                <div class="internship-header">
+                  <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                  <div>
+                    <h3>Technical Intern – India Space Lab</h3>
+                    <p class="internship-duration">Jun 2025 – Jul 2025 | Online</p>
+                  </div>
+                </div>
+                <p class="internship-description">Selected for the India Space Lab Summer Internship Technical Training program. Engaged in technical projects involving space tech simulation, basic orbital mechanics, and Python scripting for scientific computation. Attended expert-led training sessions and contributed to collaborative projects aligned with space research and innovation.</p>
+              </div>
+              <div class="internship-item">
+                <div class="internship-header">
+                  <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                  <div>
+                    <h3>💻 Software Development Intern – Bluestock Fintech</h3>
+                    <p class="internship-duration">Jan 2025 – Mar 2025 | Remote</p>
+                  </div>
+                </div>
+                <p class="internship-description">Worked as a Software Development Intern with a focus on Machine Learning. Contributed to building intelligent financial models for credit risk analysis and automated investment insights using Python, Scikit-learn, and Pandas. Gained hands-on experience in model training, data preprocessing, and algorithm optimization.</p>
+              </div>
+              <div class="internship-item">
+                <div class="internship-header">
+                  <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                  <div>
+                    <h3>🌐 Web Development Intern – Ooumph Networks Pvt. Ltd.</h3>
+                    <p class="internship-duration">Apr 2025 – May 2025 | Lucknow (Hybrid)</p>
+                  </div>
+                </div>
+                <p class="internship-description">Developed and maintained responsive websites and internal dashboards using React.js, HTML, CSS, and JavaScript. Collaborated with the design and backend teams to improve UI/UX, gained experience with Git, and responsive design techniques.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project One image"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title"> FinTracker </h2>
+            <h2 class="experience-sub-title project-title">AI-Powered Personal Finance Management Platform</h2>
+            <p class="project-summary">
+             FinTracker is a full-stack personal finance app built with Next.js, Shadcn UI, and PostgreSQL. It features secure authentication, real-time transaction tracking, an AI-powered receipt scanner, and automated budget alerts using Inngest. The website is protected with Arcjet and deployed on Vercel for seamless performance.
+
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/AnchalSR/FinTracker-Finance-Tracker-with-AI'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://fin-tracker-finance-tracker-with-ai.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project Two image"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">WhatsApp Chat Analyzer</h2>
+            <h2 class="experience-sub-title project-title">Chat Insight Dashboard</h2>
+            <p class="project-summary">
+              Developed a Python-based WhatsApp Chat Analyzer to extract insights from raw chat exports, using regular expressions and pandas for efficient parsing and structuring of over 740 messages. Integrated NLP techniques for sentiment analysis and user activity tracking, and visualized trends with matplotlib, seaborn, and wordcloud. The solution features an interactive time-series dashboard and is deployed on Streamlit for accessible, real-time analysis.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/AnchalSR/Whatsapp-chat-analysis'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://whatsapp-chat-analysis-qsbfb2zayq2ypxrk5a9ei2.streamlit.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project Three image"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">FavMovie</h2>
+            <h2 class="experience-sub-title project-title">Movie Recommendation System</h2>
+            <p class="project-summary">
+              Developed FavMovie, a content-based movie recommendation system in Python that analyzes TMDB movie and credits data to suggest similar films based on genres, keywords, cast, and crew. The project features robust data wrangling, NLP-driven tag engineering, and cosine similarity for recommendations. the entire solution was deployed as an interactive web app using Streamlit, enabling users to get instant movie suggestions through a simple, user-friendly interface
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/AnchalSR/FavMovie'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:anchalverma772@gmail.com">anchalverma772@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/anchal-kumar-verma-999858250/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 - 2026 Anchal. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
